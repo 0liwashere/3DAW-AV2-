@@ -1,0 +1,184 @@
+/* =========================================================
+   Rent a Car - Estilos Globais
+   ========================================================= */
+
+:root {
+    --cor-escura: #0d2436;
+    --cor-escura-2: #0a1c2b;
+    --cor-amarela: #f5c518;
+    --cor-amarela-hover: #e0b30f;
+    --cor-verde: #3fb950;
+    --cor-texto-claro: #ffffff;
+    --cor-texto-escuro: #1a1a1a;
+    --cor-cinza-borda: #d0d0d0;
+    --cor-cinza-fundo: #f4f4f4;
+    --fonte-padrao: 'Segoe UI', Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--fonte-padrao);
+    color: var(--cor-texto-escuro);
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+}
+
+/* ---------- Botões ---------- */
+.btn-primario {
+    background-color: var(--cor-amarela);
+    color: var(--cor-texto-escuro);
+    font-weight: bold;
+    padding: 14px 24px;
+    border-radius: 30px;
+    text-align: center;
+    transition: background-color .2s ease;
+}
+
+.btn-primario:hover {
+    background-color: var(--cor-amarela-hover);
+}
+
+.btn-secundario {
+    background-color: transparent;
+    border: 1px solid var(--cor-texto-claro);
+    color: var(--cor-texto-claro);
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+    background-color: var(--cor-escura);
+    color: var(--cor-texto-claro);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+}
+
+.site-header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.site-header .main-nav {
+    display: flex;
+    gap: 32px;
+    font-weight: 600;
+}
+
+.site-header .user-icon {
+    color: var(--cor-texto-claro);
+    display: flex;
+    align-items: center;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+    background-color: var(--cor-escura-2);
+    color: #cfd8dc;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px;
+    font-size: 0.9rem;
+}
+
+.site-footer h4 {
+    color: var(--cor-texto-claro);
+    margin-bottom: 12px;
+}
+
+.site-footer .footer-title-highlight {
+    color: var(--cor-amarela);
+}
+
+.site-footer .footer-col {
+    flex: 1;
+    min-width: 200px;
+}
+
+.site-footer li {
+    margin-bottom: 8px;
+}
+
+.site-footer .social-icons {
+    display: flex;
+    gap: 14px;
+    margin-top: 14px;
+}
+
+.site-footer .social-icons a {
+    color: var(--cor-texto-claro);
+}
+
+.site-footer .footer-bottom {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 16px;
+    margin-top: 10px;
+    font-size: 0.8rem;
+}
+
+/* ---------- Mensagens de erro/sucesso ---------- */
+.alerta {
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    font-size: 0.9rem;
+}
+
+.alerta-erro {
+    background-color: #fdecea;
+    color: #b71c1c;
+    border: 1px solid #f5c6cb;
+}
+
+.alerta-sucesso {
+    background-color: #e8f5e9;
+    color: #256029;
+    border: 1px solid #c3e6cb;
+}
+
+/* ---------- Utilitários ---------- */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.tag-verde {
+    background-color: var(--cor-verde);
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 2px 8px;
+    border-radius: 10px;
+}

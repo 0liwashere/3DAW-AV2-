@@ -1,0 +1,214 @@
+/* =========================================================
+   Estilos da página Home
+   ========================================================= */
+
+.busca-barra {
+    background-color: var(--cor-cinza-fundo);
+    border-radius: 10px;
+    margin: 24px auto;
+    padding: 24px 28px;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: flex-end;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.busca-campo {
+    flex: 1;
+    min-width: 160px;
+}
+
+.busca-campo label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.busca-campo input,
+.busca-campo select {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid var(--cor-cinza-borda);
+    font-size: 0.9rem;
+}
+
+.busca-barra .btn-primario {
+    height: 42px;
+    padding: 0 28px;
+    white-space: nowrap;
+}
+
+.busca-erro {
+    width: 100%;
+    color: #b71c1c;
+    font-size: 0.8rem;
+    margin-top: -4px;
+}
+
+/* ---------- Banner promocional (carrossel) ---------- */
+.banner-carrossel {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: linear-gradient(120deg, #263238, #37474f);
+    color: white;
+    min-height: 280px;
+}
+
+.banner-slide {
+    display: none;
+    padding: 40px 60px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    min-height: 280px;
+}
+
+.banner-slide.ativo {
+    display: flex;
+}
+
+.banner-slide .banner-texto h2 {
+    font-size: 2.2rem;
+    color: var(--cor-amarela);
+    line-height: 1.1;
+}
+
+.banner-slide .banner-texto h3 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.banner-slide .banner-texto p {
+    max-width: 320px;
+    opacity: 0.9;
+}
+
+.banner-slide .banner-destaque {
+    font-weight: bold;
+    color: var(--cor-amarela);
+    text-align: right;
+    min-width: 140px;
+}
+
+.banner-carros {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+.banner-carro-tras {
+    position: absolute;
+    max-width: 220px;
+    top: 10px;
+    left: 10%;
+    opacity: 0.85;
+    filter: brightness(0.9);
+}
+
+.banner-carro-frente {
+    position: absolute;
+    max-width: 260px;
+    bottom: 0;
+    right: 5%;
+}
+
+.banner-slide img {
+    max-width: 320px;
+}
+
+.carrossel-seta {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.15);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+    border: none;
+}
+
+.carrossel-seta.esquerda { left: 16px; }
+.carrossel-seta.direita { right: 16px; }
+
+/* ---------- Texto institucional ---------- */
+.secao-institucional {
+    max-width: 900px;
+    margin: 0 auto 50px;
+    padding: 0 24px;
+}
+
+.secao-institucional h2 {
+    margin-bottom: 16px;
+}
+
+.secao-institucional p {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* ---------- Carrossel de turismo ---------- */
+.turismo-carrossel {
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto 20px;
+    border: 1px solid var(--cor-cinza-borda);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.turismo-slide {
+    display: none;
+}
+
+.turismo-slide.ativo {
+    display: block;
+}
+
+.turismo-slide img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.turismo-legenda {
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin: 16px 0 40px;
+}
+
+/* ---------- Lista de Lojas ---------- */
+.lojas-lista {
+    max-width: 700px;
+    margin: 0 auto 60px;
+    padding: 0 24px;
+}
+
+.lojas-lista .loja-item {
+    margin-bottom: 12px;
+}
+
+.lojas-lista .loja-item strong {
+    display: block;
+}
+
+.lojas-lista .loja-item span {
+    color: #444;
+    font-size: 0.95rem;
+}

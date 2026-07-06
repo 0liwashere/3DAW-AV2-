@@ -1,0 +1,164 @@
+/* =========================================================
+   Estilos da página de Pagamento
+   ========================================================= */
+
+.pagamento-layout {
+    display: flex;
+    min-height: calc(100vh - 140px);
+}
+
+.pagamento-resumo-lado {
+    flex: 1;
+    padding: 40px;
+    max-width: 480px;
+}
+
+.pagamento-cartao-lado {
+    flex: 1;
+    background-color: var(--cor-escura);
+    color: var(--cor-texto-claro);
+    padding: 40px;
+}
+
+/* ---------- Resumo (lado esquerdo) ---------- */
+.resumo-caixa .resumo-corpo p.carro-nome {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+}
+
+.cupom-area {
+    margin: 16px 0;
+}
+
+.cupom-area label {
+    font-size: 0.85rem;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.cupom-linha {
+    display: flex;
+    gap: 8px;
+}
+
+.cupom-linha input {
+    flex: 1;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid var(--cor-cinza-borda);
+}
+
+.cupom-linha button {
+    padding: 10px 16px;
+    border-radius: 6px;
+    background-color: var(--cor-escura);
+    color: white;
+    font-weight: 600;
+}
+
+.cupom-mensagem {
+    font-size: 0.82rem;
+    margin-top: 6px;
+}
+
+.cupom-aplicado {
+    color: #2e7d32;
+}
+
+.cupom-erro {
+    color: #c62828;
+}
+
+.parcelamento-texto {
+    font-size: 0.85rem;
+    color: #555;
+    margin: 16px 0;
+}
+
+.termos-area {
+    font-size: 0.82rem;
+    margin-bottom: 8px;
+}
+
+.termos-area label {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+/* ---------- Cartão (lado direito) ---------- */
+.cartao-visual {
+    background: linear-gradient(135deg, #2b2b2b, #444);
+    border-radius: 14px;
+    padding: 24px;
+    max-width: 380px;
+    margin: 0 auto 30px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+
+.cartao-visual .cartao-topo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.cartao-visual .cartao-numero {
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+    margin-bottom: 24px;
+    font-family: monospace;
+}
+
+.cartao-visual .cartao-rodape {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
+
+.cartao-visual .cartao-rodape .validade-cvc {
+    display: flex;
+    gap: 16px;
+}
+
+.campo-grupo-pagamento {
+    max-width: 380px;
+    margin: 0 auto;
+}
+
+.campo-grupo-pagamento label {
+    display: block;
+    font-size: 0.8rem;
+    margin-bottom: 6px;
+    margin-top: 14px;
+}
+
+.campo-grupo-pagamento input {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 6px;
+    border: 1px solid #4a5b68;
+    background: transparent;
+    color: white;
+}
+
+.campo-linha-dupla {
+    display: flex;
+    gap: 14px;
+}
+
+.campo-linha-dupla > div {
+    flex: 1;
+}
+
+.pagamento-cartao-lado .btn-primario {
+    width: 100%;
+    max-width: 380px;
+    display: block;
+    margin: 26px auto 0;
+    border: none;
+}

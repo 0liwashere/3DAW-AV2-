@@ -1,0 +1,96 @@
+/* =========================================================
+   Estilos da página de Perfil do Usuário
+   ========================================================= */
+
+.perfil-conteudo {
+    max-width: 900px;
+    margin: 40px auto 60px;
+    padding: 0 24px;
+}
+
+.perfil-avatar-area {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.perfil-avatar-wrapper {
+    position: relative;
+    width: 110px;
+    height: 110px;
+}
+
+.perfil-avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 2px solid var(--cor-escura);
+    object-fit: cover;
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.perfil-avatar svg {
+    width: 60px;
+    height: 60px;
+    color: #9aa8b3;
+}
+
+.perfil-camera-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: var(--cor-amarela);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+.perfil-camera-btn input[type="file"] {
+    display: none;
+}
+
+.perfil-linha {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+}
+
+.perfil-linha .campo-grupo {
+    flex: 1;
+    min-width: 180px;
+}
+
+.perfil-linha .campo-grupo label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.perfil-linha .campo-grupo input {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid var(--cor-cinza-borda);
+    font-size: 0.9rem;
+    color: var(--cor-texto-escuro);
+}
+
+.perfil-conteudo .btn-primario {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    margin: 20px auto 0;
+    border: none;
+    font-size: 1rem;
+}

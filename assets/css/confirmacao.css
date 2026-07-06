@@ -1,0 +1,41 @@
+/* =========================================================
+   Estilos da página de Reserva Confirmada
+   ========================================================= */
+
+.confirmacao-conteudo {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 24px 60px;
+}
+
+.confirmacao-topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.confirmacao-topo h1 {
+    font-size: 2.2rem;
+    line-height: 1.1;
+}
+
+.confirmacao-topo img {
+    max-width: 280px;
+}
+
+.confirmacao-conteudo ul {
+    margin: 14px 0 24px 20px;
+}
+
+.confirmacao-conteudo li {
+    margin-bottom: 6px;
+    list-style: disc;
+}
+
+.confirmacao-conteudo p {
+    margin-bottom: 14px;
+    line-height: 1.6;
+    color: #333;
+}

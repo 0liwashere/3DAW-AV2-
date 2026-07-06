@@ -1,0 +1,210 @@
+/* =========================================================
+   Estilos das páginas de Login e Cadastro
+   ========================================================= */
+
+body.auth-body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* ---------- Login (split-screen) ---------- */
+.login-wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+.login-form-side {
+    flex: 1;
+    background-color: var(--cor-escura);
+    color: var(--cor-texto-claro);
+    padding: 50px 60px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 480px;
+}
+
+.login-image-side {
+    flex: 1.4;
+    background-size: cover;
+    background-position: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    font-size: 1.5rem;
+    color: var(--cor-texto-claro);
+    font-weight: bold;
+}
+
+.login-form-side h1 {
+    font-size: 1.8rem;
+    margin-bottom: 28px;
+}
+
+.campo-grupo {
+    margin-bottom: 18px;
+}
+
+.campo-grupo label {
+    display: block;
+    font-size: 0.85rem;
+    margin-bottom: 6px;
+}
+
+.campo-grupo input,
+.campo-grupo select {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 20px;
+    border: 1px solid #4a5b68;
+    background-color: transparent;
+    color: var(--cor-texto-claro);
+    font-size: 0.9rem;
+}
+
+.campo-grupo input::placeholder {
+    color: #9aa8b3;
+}
+
+.linha-opcoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+}
+
+.linha-opcoes a {
+    color: #cfd8dc;
+    text-decoration: underline;
+}
+
+.divisor-ou {
+    text-align: center;
+    margin: 20px 0;
+    color: #9aa8b3;
+    font-size: 0.85rem;
+    position: relative;
+}
+
+.social-btn {
+    width: 100%;
+    background: transparent;
+    border: 1px solid var(--cor-texto-claro);
+    color: var(--cor-texto-claro);
+    padding: 12px;
+    border-radius: 30px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.criar-conta-area {
+    margin-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    padding-top: 20px;
+    text-align: center;
+}
+
+.criar-conta-area .btn-secundario {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.admin-link {
+    font-size: 0.8rem;
+    color: #9aa8b3;
+    text-decoration: underline;
+}
+
+/* ---------- Cadastro (fundo com imagem + overlay) ---------- */
+.cadastro-wrapper {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.cadastro-wrapper::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(10, 28, 43, 0.72);
+}
+
+.cadastro-header {
+    position: relative;
+    background-color: var(--cor-escura);
+    color: var(--cor-texto-claro);
+    padding: 24px 40px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.cadastro-header h1 {
+    font-size: 1.6rem;
+}
+
+.cadastro-conteudo {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 24px 60px;
+    color: var(--cor-texto-claro);
+}
+
+.cadastro-secao {
+    margin-bottom: 20px;
+}
+
+.cadastro-secao h3 {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+.cadastro-linha {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.cadastro-linha .campo-grupo {
+    flex: 1;
+    min-width: 180px;
+    margin-bottom: 0;
+}
+
+.upload-box {
+    width: 200px;
+    height: 130px;
+    border: 2px dashed rgba(255,255,255,0.5);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    text-align: center;
+    background: rgba(255,255,255,0.05);
+}
+
+.upload-box input[type="file"] {
+    display: none;
+}
+
+.cadastro-conteudo .btn-primario {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 30px auto 0;
+    border: none;
+    font-size: 1rem;
+}

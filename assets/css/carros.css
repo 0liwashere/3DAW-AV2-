@@ -1,0 +1,184 @@
+/* =========================================================
+   Estilos da página Lista de Carros
+   ========================================================= */
+
+.carros-layout {
+    display: flex;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 24px auto 60px;
+    padding: 0 24px;
+    align-items: flex-start;
+}
+
+/* ---------- Sidebar de filtros ---------- */
+.filtros-sidebar {
+    width: 260px;
+    flex-shrink: 0;
+    background-color: #fff;
+    border: 1px solid var(--cor-cinza-borda);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.filtro-grupo {
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.filtro-grupo:last-child {
+    border-bottom: none;
+}
+
+.filtro-grupo h4 {
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.filtro-opcao {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.87rem;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.filtro-passageiros {
+    display: flex;
+    gap: 10px;
+}
+
+.filtro-passageiros label {
+    cursor: pointer;
+}
+
+.filtro-passageiros input {
+    display: none;
+}
+
+.filtro-passageiros span {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: var(--cor-escura);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    transition: background-color .15s ease;
+}
+
+.filtro-passageiros input:checked + span {
+    background-color: var(--cor-amarela);
+    color: var(--cor-texto-escuro);
+}
+
+.filtros-sidebar .btn-primario {
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* ---------- Área principal ---------- */
+.carros-principal {
+    flex: 1;
+}
+
+.carros-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.carros-topo h2 {
+    font-size: 1.1rem;
+}
+
+.carros-topo-acoes {
+    display: flex;
+    gap: 10px;
+}
+
+.carros-topo-acoes input,
+.carros-topo-acoes select {
+    padding: 8px 14px;
+    border-radius: 20px;
+    border: 1px solid var(--cor-cinza-borda);
+    font-size: 0.85rem;
+}
+
+/* ---------- Card de carro ---------- */
+.carro-card {
+    display: flex;
+    gap: 20px;
+    border: 1px solid var(--cor-cinza-borda);
+    border-radius: 10px;
+    padding: 18px;
+    margin-bottom: 16px;
+    align-items: center;
+}
+
+.carro-card img {
+    width: 180px;
+    height: 110px;
+    object-fit: contain;
+}
+
+.carro-card .carro-info {
+    flex: 1;
+}
+
+.carro-card .carro-info h3 {
+    font-size: 1.15rem;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.carro-specs {
+    display: flex;
+    gap: 14px;
+    font-size: 0.8rem;
+    color: #555;
+    margin: 8px 0;
+    flex-wrap: wrap;
+}
+
+.carro-precos {
+    text-align: right;
+    min-width: 160px;
+}
+
+.carro-precos .preco {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.carro-tags {
+    font-size: 0.78rem;
+    color: #444;
+    margin-top: 8px;
+}
+
+.carro-tags .tag-ok {
+    color: #2e7d32;
+}
+
+.carro-tags .tag-info {
+    color: #c62828;
+}
+
+.sem-resultados {
+    text-align: center;
+    padding: 60px 20px;
+    color: #666;
+}
