@@ -19,7 +19,6 @@ $protecoes = $pdo->query('SELECT * FROM protecoes ORDER BY id')->fetchAll();
 $adicionais = $pdo->query('SELECT * FROM adicionais ORDER BY id')->fetchAll();
 $usuario = usuarioAtual();
 
-// Datas padrão: retirada hoje, devolução em 7 dias (para já ilustrar a promoção Black Nov)
 $hoje = date('Y-m-d\TH:i', strtotime('+1 day 10:00'));
 $emSeteDias = date('Y-m-d\TH:i', strtotime('+8 days 10:00'));
 ?>
@@ -211,7 +210,6 @@ $emSeteDias = date('Y-m-d\TH:i', strtotime('+8 days 10:00'));
         let subtotalDiarias = precoDiaria * dias;
         document.getElementById('subtotalDiarias').textContent = formatarMoeda(subtotalDiarias);
 
-        // Promoção Black Nov: alugando por 7 dias ou mais, um dia sai grátis
         const linhaPromocao = document.getElementById('linhaPromocao');
         let desconto = 0;
         if (dias >= 7) {
@@ -222,7 +220,7 @@ $emSeteDias = date('Y-m-d\TH:i', strtotime('+8 days 10:00'));
             linhaPromocao.style.display = 'none';
         }
 
-        // Proteção selecionada
+
         const protecaoSelecionada = document.querySelector('input[name="protecao_id"]:checked');
         const linhaProtecao = document.getElementById('linhaProtecao');
         let valorProtecao = 0;
@@ -270,7 +268,6 @@ $emSeteDias = date('Y-m-d\TH:i', strtotime('+8 days 10:00'));
         document.getElementById('valorTotal').textContent = formatarMoeda(total);
     }
 
-    // Botões +/- dos adicionais com quantidade
     document.querySelectorAll('.seletor-quantidade').forEach(function (seletor) {
         const input = seletor.querySelector('.qtd-input');
         const valorSpan = seletor.querySelector('.qtd-valor');
