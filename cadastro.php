@@ -9,7 +9,7 @@ if (usuarioEstaLogado()) {
 $erro = $_SESSION['erro_cadastro'] ?? null;
 unset($_SESSION['erro_cadastro']);
 
-// Busca as lojas para popular o select "Local de Partida"
+
 $pdo = getConexao();
 $lojas = $pdo->query('SELECT id, nome FROM lojas ORDER BY nome')->fetchAll();
 ?>
